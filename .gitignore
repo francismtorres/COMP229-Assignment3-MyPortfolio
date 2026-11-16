@@ -1,0 +1,24 @@
+# dependencies and build output
+node_modules
+client/node_modules
+client/dist
+dist
+
+# secrets - never commit these
+.env
+.env.*
+!.env.example
+
+# Postman desktop workspace folders (only postman/MyPortfolio.postman_collection.json is submitted)
+.postman/
+postman/collections/
+postman/environments/
+postman/globals/
+postman/mocks/
+postman/flows/
+postman/specs/
+
+# logs and OS files
+*.log
+.DS_Store
+Thumbs.db

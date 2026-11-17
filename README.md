@@ -115,6 +115,3 @@ In line with the course's permitted-use policy for AI tools, I used an AI assist
 - Provided the assignment sheet, course slides and my earlier assignments, and directed the work.
 - Set up my own MongoDB database and `.env`, created the admin account, ran the application, and tested every feature in the browser and in Postman.
 - Captured the screenshots in the submission document and reviewed the code so that I can explain how it works.
-- [Add anything else you changed or fixed yourself.]
-
-The commit history shows Claude as a co-author on the commits it helped produce.

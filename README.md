@@ -102,7 +102,7 @@ password is documented here for marking. Change it before deploying anywhere pub
 - JWTs are signed with a secret from `.env`; `helmet` sets secure headers; request fields are whitelisted.
 - Secrets live in `.env`, which is excluded from Git.
 
-## AI Use Disclosure
+### AI Use Disclosure
 
 In line with the course's permitted-use policy for AI tools, I used an AI assistant (Claude, by Anthropic) while building this project.
 
@@ -110,8 +110,10 @@ In line with the course's permitted-use policy for AI tools, I used an AI assist
 - Translating the Assignment 3 sheet and the Week 5, 6, 8, 9 and 10 slides into the code: role-based authorization on the back end, the admin seed script, the sign-in / sign-up forms, the auth context, protected routes and the reusable add / edit / delete component.
 - Writing the Postman collection, the API reference, this README and the template for the submission document.
 - Running automated checks on the code (a browser walk-through and the Postman collection) before I received it.
+- With my permission and while I watched, operating my browser and Postman by remote control to capture the screenshots in the submission document, and helping me troubleshoot Git, MongoDB Atlas, Render and Vercel.
 
 **What I did myself**
 - Provided the assignment sheet, course slides and my earlier assignments, and directed the work.
-- Set up my own MongoDB database and `.env`, created the admin account, ran the application, and tested every feature in the browser and in Postman.
-- Captured the screenshots in the submission document and reviewed the code so that I can explain how it works.
+- Set up my own MongoDB database and `.env`, created the admin account, ran the application, and tested the features in the browser and in Postman.
+- Signed in to my own accounts (MongoDB Atlas, GitHub, Render and Vercel), typed the terminal commands, entered all passwords and secrets myself, and approved each step the assistant took.
+- Reviewed the code so that I can explain how it works.

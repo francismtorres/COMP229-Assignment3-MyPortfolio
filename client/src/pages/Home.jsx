@@ -52,7 +52,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-photo">
-            <img src={personalInfo.headshotPath} alt={`Portrait of ${personalInfo.legalName}`} width="450" height="450" />
+            <img src={personalInfo.headshotPath} alt={`Portrait of ${personalInfo.legalName}`} width="450" height="450" fetchPriority="high" decoding="async" />
           </div>
         </div>
       </section>
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="card-grid card-grid-3">
             {projectList.slice(0, 3).map((project) => (
               <Link to="/projects" className="card preview-card" key={project.id}>
-                <img src={project.images[0].src} alt={project.images[0].alt} loading="lazy" />
+                <img src={project.images[0].src} alt={project.images[0].alt} width={project.images[0].width} height={project.images[0].height} loading="lazy" decoding="async" />
                 <div className="card-body">
                   <h3>{project.title}</h3>
                   <p className="muted">{project.context}</p>

@@ -19,7 +19,7 @@ export const personalInfo = {
   linkedInUrl: "https://www.linkedin.com/in/francis-torres",
   gitHubUrl: "https://github.com/francismtorres",
   resumePdfPath: "/resume/Francis_Torres_Resume.pdf",
-  headshotPath: "/images/francis-headshot.jpg",
+  headshotPath: "/images/francis-headshot.webp",
 };
 
 // Draft mission statement shown on the Home page
@@ -56,8 +56,8 @@ export const projectList = [
     period: "May 2026 - August 2026",
     context: "Independent Web Development Project",
     images: [
-      { src: "/images/wedding-itinerary.jpg", alt: "Itinerary section of the wedding website showing ceremony, cocktail hour, brunch buffet and reception cards" },
-      { src: "/images/wedding-venue.jpg", alt: "Venue section of the wedding website showing the address, parking and accommodation cards" },
+      { src: "/images/wedding-itinerary.webp", width: 1400, height: 702, alt: "Itinerary section of the wedding website showing ceremony, cocktail hour, brunch buffet and reception cards" },
+      { src: "/images/wedding-venue.webp", width: 1400, height: 602, alt: "Venue section of the wedding website showing the address, parking and accommodation cards" },
     ],
     role: "Sole designer and developer. I researched, designed, built and troubleshot the whole site on my own.",
     outcome: "Delivered a responsive, mobile-friendly information hub for a real wedding, organized around what guests actually need: schedule, venue, parking and accommodations.",
@@ -69,7 +69,7 @@ export const projectList = [
     title: "Bug Smasher Canvas Game",
     period: "January 2026 - April 2026",
     context: "Centennial College, COMP 125",
-    images: [{ src: "/images/bug-smasher.jpg", alt: "Bug Smasher game screen with a score and speed counter, a red-bordered play area and a dark blue bug" }],
+    images: [{ src: "/images/bug-smasher.webp", width: 1270, height: 861, alt: "Bug Smasher game screen with a score and speed counter, a red-bordered play area and a dark blue bug" }],
     role: "Developer. I built the interactive game with HTML5 Canvas and JavaScript, including touch and pointer support.",
     outcome: "A playable game where a bug hops around the board and speeds up as you score, with Reset Speed and Reset Score controls that work on desktop and mobile.",
     technologies: ["HTML5 Canvas", "JavaScript", "Touch Events"],

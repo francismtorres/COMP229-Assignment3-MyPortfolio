@@ -9,6 +9,10 @@ const pageTitles = {
   "/education": "Education",
   "/services": "Services",
   "/contact": "Contact Me",
+  "/signin": "Sign In",
+  "/signup": "Sign Up",
+  "/admin/contacts": "Contact Messages",
+  "/admin/users": "Users",
 };
 
 export default function ScrollToTop() {

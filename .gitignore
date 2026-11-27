@@ -22,3 +22,7 @@ postman/specs/
 *.log
 .DS_Store
 Thumbs.db
+
+# Cypress run output
+client/cypress/videos/
+client/cypress/screenshots/

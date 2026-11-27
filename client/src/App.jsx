@@ -1,17 +1,18 @@
+import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Projects from "./pages/Projects.jsx";
-import Education from "./pages/Education.jsx";
-import Services from "./pages/Services.jsx";
-import Contact from "./pages/Contact.jsx";
-import Signin from "./pages/Signin.jsx";
-import Signup from "./pages/Signup.jsx";
-import AdminContacts from "./pages/AdminContacts.jsx";
-import AdminUsers from "./pages/AdminUsers.jsx";
+const About = lazy(() => import("./pages/About.jsx"));
+const Projects = lazy(() => import("./pages/Projects.jsx"));
+const Education = lazy(() => import("./pages/Education.jsx"));
+const Services = lazy(() => import("./pages/Services.jsx"));
+const Contact = lazy(() => import("./pages/Contact.jsx"));
+const Signin = lazy(() => import("./pages/Signin.jsx"));
+const Signup = lazy(() => import("./pages/Signup.jsx"));
+const AdminContacts = lazy(() => import("./pages/AdminContacts.jsx"));
+const AdminUsers = lazy(() => import("./pages/AdminUsers.jsx"));
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
@@ -26,6 +27,7 @@ export default function App() {
       <ScrollToTop />
       <Navbar />
       <main id="main-content" className="app-main">
+        <Suspense fallback={<div className="container section" aria-busy="true" role="status">Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -41,6 +43,7 @@ export default function App() {
           {/* Any unknown address falls back to a friendly 404 page */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        </Suspense>
       </main>
       <Footer />
     </div>

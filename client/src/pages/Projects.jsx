@@ -26,7 +26,7 @@ export default function Projects() {
             >
               <div className={`project-media ${project.images.length > 1 ? "project-media-multi" : ""}`}>
                 {project.images.map((image) => (
-                  <img key={image.src} src={image.src} alt={image.alt} loading="lazy" />
+                  <img key={image.src} src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" />
                 ))}
               </div>
 

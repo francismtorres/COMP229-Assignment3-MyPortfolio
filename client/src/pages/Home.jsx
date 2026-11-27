@@ -72,6 +72,10 @@ export default function Home() {
         <div className="container mission">
           <p className="eyebrow">Mission statement</p>
           <blockquote>{missionStatement}</blockquote>
+          <p className="lead mission-update">
+            <strong>Release note:</strong> this portfolio is continuously deployed. Every change merged into the main
+            branch on GitHub is automatically built and published to the cloud by Vercel.
+          </p>
         </div>
       </section>
 
